@@ -1,4 +1,4 @@
-FROM nginx:1.14.0-alpine
+FROM nginx:1.27.2-alpine
 LABEL mantainer="lmtbelmonte@cloud-bigdata.net"
 RUN apk --no-cache add python2 py2-pip && pip2 install j2cli[yaml]
 RUN apk add --update bash && rm -rf /var/cache/apk/*
